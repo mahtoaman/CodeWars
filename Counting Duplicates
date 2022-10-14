@@ -1,0 +1,15 @@
+function duplicateCount(text){
+  console.log(text)
+  let unique = []
+  let duplicate = []
+  text = text.toLowerCase().split('')
+  for(let i= 0;i<text.length;i++){
+    if(!unique.includes(text[i])){
+      unique.push(text[i])
+    }
+    else if(!duplicate.includes(text[i])){
+      duplicate.push(text[i])
+    }
+  }
+  return duplicate.length
+}
