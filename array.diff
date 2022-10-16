@@ -1,0 +1,14 @@
+function arrayDiff(a, b) {
+     let result = [];
+    for(let i = 0; i < a.length; i++) {
+        let flag = 0;
+        for(let j = 0; j < b.length; j++) {
+            if(a[i] === b[j]){ 
+                flag = 1;
+            }
+        }
+        if(flag==0) result.push(a[i]);
+    }
+    return result;
+
+}
