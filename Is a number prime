@@ -1,0 +1,11 @@
+function isPrime(num) {
+  let count =0
+  if(num<=1) return false
+  if(num==2) return true
+  for(let i=2;i<Math.sqrt(num) + 1;i++){
+    if(num%i==0){
+      count++
+    }
+  }
+  return (count>0)?false:true
+}
